@@ -1,0 +1,427 @@
+/*---------------- IMAGEN PRINCIPAL ----------------*/
+#imagenPrincipal{
+    width: 99.1vw;
+    height: 99.1vh;
+}
+/*  ---------------- BODY ---------------- */
+body{
+    font-family: 'PT Sans', sans-serif;
+    background-color:#79a4c4;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color:black
+}
+/*---------------- MENU ----------------*/
+.logo{
+    width: 10vw;
+    height: 9vh;
+    margin: 0px 0px 0px 30px;
+}
+
+.items li{
+    justify-content: space-around;
+}
+.menu{
+    display: flex;
+    background-color: #0E77C2;
+    border: 1px solid #0E77C2;
+    padding: 2px;
+    margin:0px 0px 0px 0px ;
+    align-items:center;
+}
+.menu .logo {
+    display: flex;
+    position: absolute;
+    left:  10px;
+}
+.menu  ul {
+    display: flex;
+}
+
+.menu ul li{
+    text-align: center;
+    list-style: none;
+    background-color: #0E77C2;
+    width: 5vw;
+    height: 3vh;
+    border: 1px solid rgb(61, 61, 54);
+    padding: 3px;
+    margin: 0px 30px 0px 0px;
+}
+.menu{
+    width: 99.1vw;
+    height: 10vh;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+/*---------------- INDEX ----------------*/
+.resolucionEmpresa h1{
+    text-align: center;
+    border: 3px;
+    padding: 1px;
+}
+
+.indexProblemas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.queSucede h2{
+    text-align: center;
+    border: 3px;
+    padding: 1px;
+    width: 100vw;
+    height: 10vh;
+}
+.textoIndex1{
+    display: flex;
+}
+.textoIndex1 p {
+    padding: 3px;
+}
+
+.textoIndex2{
+    display: flex;
+}
+.textoIndex2 p {
+    padding: 3px;
+}
+.imagesIndex{
+    width: 20vw;
+    height: 30vh;
+    padding: 3px;
+}
+/*---------------- CONOCENOS ----------------*/
+.principal{
+    display: flex;
+    justify-content: center;
+    margin: 3px 0px 3px 0px;
+}
+.conocenos{
+    display: flex;
+}
+
+/*----------------- SERVICIOS ---------------------*/
+.imagenesServicio{
+    width: 20vw;
+    height: 30vh;
+}
+
+.tituloServicios h1{
+    text-align: center;
+}
+.servicioUno{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30vw;
+    height: 60vh;
+    grid-area: servicioUno;
+    background-color: #45667e88;
+    box-sizing: content-box;
+    border-radius: 20px;
+}
+.servicioUno img{
+    padding: 15px;
+    border-radius: 20px;
+    
+}
+.servicioDos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30vw;
+    height: 60vh;
+    grid-area: servicioDos;
+    background-color: #45667e88;
+    box-sizing: content-box;
+    border-radius: 20px;
+}
+.servicioDos img{
+    padding: 15px;
+    border-radius: 20px;
+}
+.servicioTres{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 30vw;
+    height: 60vh;
+    grid-area: servicioTres;
+    background-color: #45667e88;
+    box-sizing: content-box;
+    border-radius: 20px;
+}
+.servicioTres img{
+    padding: 15px;
+    border-radius: 20px;
+}
+.diferentesServicios{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "servicioUno servicioDos servicioTres";
+}
+
+/*------------------ CLIENTES ---------------------*/
+.imagenesClientes{
+    width: 20%;
+    height: 20%;
+}
+
+/*---------------------FOOTER----------------------*/
+footer h3{
+    text-align: center;
+    justify-content: center;
+    margin: 3px 0px 0px 0px;
+    padding: 3px;
+    background-color: #0B5F9C;
+}
+/*---- Contacto ----*/
+main h1{
+    text-align: center;
+}
+.contacto{
+    background-color: #0E77C2;
+}
+.contacto ul li{
+    display: inline;
+    list-style: none;
+    border: 1px;
+    padding: 3px;
+}
+.contacto ul{
+    display: flex;
+    justify-content: space-around;
+}
+main h3{
+    text-align: center;
+    justify-content: center;
+    margin: 3px 0px 0px 0px;
+    padding: 3px;
+    background-color: #0B5F9C;
+}
+/*---- Pie Pagina----*/
+
+.piePagina{
+
+    background-color: #0E77C2;
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    height: 35vh ;
+    grid-template-areas: 
+        "mapa formu";
+}
+
+.piePagina .formulario input{
+    display: block;
+    align-items: center;
+}
+/*----- Formulario ------*/
+.formulario{
+    grid-area: formu;
+}
+
+.google{
+    display: flex;
+    padding: 3px;
+    grid-area: mapa;
+    align-items: center;
+    justify-content: center;
+}
+
+#copyright{
+    background-color:#0B5F9C;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 844px) {
+    #imagenPrincipal{
+        width: 100vw;
+        height: 100vh;
+    }
+    /*-------- MENU RESPONSIVE-------------*/
+    
+    .logo img{
+        width: 25vw;
+        height: 10vh;
+    }
+    .items{
+        display: flex;
+        flex-direction: column;
+        width: 70vw;
+        align-items: center;
+    }
+    .menu{
+        width: 100vw;
+        height: 18vh;
+    }
+    .menu ul li{
+        width: 20vw;
+        border-radius: 3px;
+        margin-bottom: 3px;
+    
+
+    }
+
+   
+    /*-------- INDEX RESPONSIVE ------------*/
+    .indexProblemas img{
+        width: 100vw;
+        height: 100vh;
+    }
+    .indexProblemas img{
+        width: 100vw;
+        height: 50vh;
+    }
+    .queSucede h2{
+        height: 10vh;
+        width: 100vw;
+    }
+    .queSucede{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas:
+            "uno"
+            "dos";
+    }
+    .textoIndex1{
+        grid-area: "uno";
+        width: 100vw;
+        height: 50vh;
+    }
+    .textoIndex2{
+        grid-area: "dos";
+        width: 100vw;
+        height: 40vh;
+    }
+    .imagesIndex{
+        height: 20vh;
+        width: 30vw;
+    }
+    /*--------- CONOCENOS RESPONSIVE ---------*/
+    .principal{
+        display: flex;
+        justify-content: center;
+    }
+    .historia{
+        width: 100vw;
+        height: 163vh;
+    }  
+    .ITBA img{
+        width: 100vw;
+        height: 40vh;
+    }  
+
+    /*--------- SERVICIOS RESPONSIVE --------*/
+    .diferentesServicios{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "servicioUno"
+        "servicioDos"
+        "servicioTres";
+        row-gap: 15px;
+    }
+    .servicioUno{
+        display: flex;
+        align-items: center;
+        grid-area: servicioUno;
+        width: 100vw;
+        height: 80vh;
+        box-sizing: content-box;
+        border-radius: 20px;
+
+    }
+    .servicioDos{
+        display: flex;
+        align-items: center;
+        grid-area: servicioDos;
+        width: 100vw;
+        height: 80vh;
+        box-sizing: content-box;
+        border-radius: 20px;
+
+    }
+    .servicioTres{
+        display: flex;
+        align-items: center;
+        grid-area: servicioTres;
+        width: 100vw;
+        height: 80vh;
+        box-sizing: content-box;
+        border-radius: 20px;
+    }
+    .diferentesServicios img{
+        width: 70vw;
+        height: 50vh;
+    
+    }
+    /*--------- CONTACTO RESPONSIVE--------*/
+    .footer h3{
+        width: 100vw;
+        height: 10vh;
+    }
+    .contacto{
+        width: 100vw;
+    }
+    .contacto ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contacto ul li{
+        display: inline;
+        list-style: none;
+    }
+    #copyright{
+        width: 100vw;
+        height: 5vh;
+
+    }
+    .piePagina{
+        width: 100vw;
+        height: 40vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+            "google"
+            "formulario";
+    }
+    .google{
+    display: flex;
+    grid-area: google;
+    width: 100vw;
+    height: 20vh;
+    align-items:flex-start;
+    }
+    .formulario{
+        grid-area: formulario;
+        display: none;
+    }
+
+
+    
+}
+
+
