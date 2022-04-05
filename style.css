@@ -18,47 +18,9 @@ a{
     color:black
 }
 /*---------------- MENU ----------------*/
-.logo{
+.imagenMenu img{
     width: 10vw;
-    height: 9vh;
-    margin: 0px 0px 0px 30px;
-}
-
-.items li{
-    justify-content: space-around;
-}
-.menu{
-    display: flex;
-    background-color: #0E77C2;
-    border: 1px solid #0E77C2;
-    padding: 2px;
-    margin:0px 0px 0px 0px ;
-    align-items:center;
-}
-.menu .logo {
-    display: flex;
-    position: absolute;
-    left:  10px;
-}
-.menu  ul {
-    display: flex;
-}
-
-.menu ul li{
-    text-align: center;
-    list-style: none;
-    background-color: #0E77C2;
-    width: 5vw;
-    height: 3vh;
-    border: 1px solid rgb(61, 61, 54);
-    padding: 3px;
-    margin: 0px 30px 0px 0px;
-}
-.menu{
-    width: 99.1vw;
-    height: 10vh;
-    flex-direction: row;
-    justify-content:space-evenly;
+    height: 6vh;
 }
 /*---------------- INDEX ----------------*/
 .resolucionEmpresa h1{
@@ -101,14 +63,69 @@ a{
     padding: 3px;
 }
 /*---------------- CONOCENOS ----------------*/
-.principal{
+
+.historia{
+    width: 100vw;
+    height: 100vh;
     display: flex;
     justify-content: center;
-    margin: 3px 0px 3px 0px;
+    align-items: center;
+    flex-direction: column;
 }
-.conocenos{
+.personal{
+    width: 100vw;
+    height: 100vh;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+.cartas{
+    display: flex;
+    width: 100vw;
+    height: 40vh;
+    justify-content: space-around;
+    align-items: center;
+}
+.personal__card{
+    background-color: antiquewhite;
+    display: flex;
+    width: 15vw;
+    height: 40vh;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 25px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.4);
+}
+.card__contenido h5{
+   text-align: center;
+   align-items: center;
+}
+
+.personal__card img{
+    width: 5vw;
+    height: 15vh;
+    border-radius: 50%;
+   
+}
+.card__contenido{
+    display: flex;
+    width: 30vw;
+    height: 20vh;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    
+}
+.card__descripcion{
+   text-align:  center;
+}
+.card__descripcion{
+    border-top:2px solid #a6a6a6;
+    border-bottom: 2px solid #a6a6a6;
+    width: 13vw;
+}
+
 
 /*----------------- SERVICIOS ---------------------*/
 .imagenesServicio{
@@ -124,16 +141,24 @@ a{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 30vw;
+    width: 25vw;
     height: 60vh;
     grid-area: servicioUno;
     background-color: #45667e88;
     box-sizing: content-box;
     border-radius: 20px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.4);
+    overflow: hidden;
+    transition: all 0.25s;
+}
+.servicioUno:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2s);
 }
 .servicioUno img{
-    padding: 15px;
-    border-radius: 20px;
+    width: 25vw;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
     
 }
 .servicioDos{
@@ -141,39 +166,69 @@ a{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 30vw;
+    width: 25vw;
     height: 60vh;
     grid-area: servicioDos;
     background-color: #45667e88;
     box-sizing: content-box;
     border-radius: 20px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.4);
+    overflow: hidden;
+    transition: all 0.25s;
 }
 .servicioDos img{
-    padding: 15px;
-    border-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 25vw;
+}
+.servicioDos:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2s);
 }
 .servicioTres{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 30vw;
+    width: 25vw;
     height: 60vh;
     grid-area: servicioTres;
     background-color: #45667e88;
     box-sizing: content-box;
     border-radius: 20px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.4);
+    overflow: hidden;
+    transition: all 0.25s;
 }
 .servicioTres img{
-    padding: 15px;
-    border-radius: 20px;
+    width: 25vw;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.servicioTres:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2s);
 }
 .diferentesServicios{
+    width: 100vw;
+    height: 100vh;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-rows: 1fr;
     grid-template-areas:
         "servicioUno servicioDos servicioTres";
+}
+.servicioMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.diferentesServicios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 /*------------------ CLIENTES ---------------------*/
@@ -183,6 +238,10 @@ a{
 }
 
 /*---------------------FOOTER----------------------*/
+.contacto{
+    width: 100vw;
+    height: 49.5vh;
+}
 footer h3{
     text-align: center;
     justify-content: center;
@@ -195,6 +254,8 @@ main h1{
     text-align: center;
 }
 .contacto{
+    width: 100vw;
+    height: 3vh;
     background-color: #0E77C2;
 }
 .contacto ul li{
@@ -212,45 +273,156 @@ main h3{
     justify-content: center;
     margin: 3px 0px 0px 0px;
     padding: 3px;
-    background-color: #0B5F9C;
 }
 /*---- Pie Pagina----*/
-
 .piePagina{
-
-    background-color: #0E77C2;
-    display: grid;
-    flex-wrap: wrap;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 1fr;
-    height: 35vh ;
-    grid-template-areas: 
-        "mapa formu";
-}
-
-.piePagina .formulario input{
-    display: block;
-    align-items: center;
-}
-/*----- Formulario ------*/
-.formulario{
-    grid-area: formu;
-}
-
-.google{
     display: flex;
-    padding: 3px;
-    grid-area: mapa;
+    width: 100vw;
+    height: 50vh;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
-    justify-content: center;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    width: 25vw;
+    justify-content:space-around;
+    align-items: center;
+    background-color:rgb(88, 125, 211) ;
+
 }
 
-#copyright{
+
+.nombreYapellido{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.formu_NyA input{
+    height: 3vh;
+    width: 10vw;
+    border-radius: 8px;
+}
+.asunto input{
+    height: 3vh;
+    width: 20vw;
+    border-radius: 8px;
+}
+.mensaje textarea{
+    height: 15vh;
+    width: 20vw;
+    border-radius: 8px;
+
+}
+.enviar{
+    display: flex;
+    justify-content: center;
+
+}
+.socials li{
+    width: 5vw;
+}
+
+footer{
     background-color:#0B5F9C;
     text-align: center;
+    height: auto;
+    width: 100%;
+}
+.socials{
+    width: 100vw;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin: 1% 0 1% 0;
+}
+.socials a i{
+    transition: color .4s ease ;
+}
+.socials a:hover{
+    color: rgb(255, 255, 255);
+}
+/*------------- LOGIN ------------*/
+.caja{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+
 }
 
+.centro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    width: 20vw;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.4);
+    overflow: hidden;
 
+}
+.centro form{
+    width: 20vw;
+    height: 18vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.centro .login{
+    width: 20vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid silver;
+    text-align: center;
+}
+.centro input{
+    border: none;
+    font-size: 16px;
+    background: none;
+    outline: none;
+}
+.subir_login{
+    display: flex;
+    justify-content: center;
+    width: 10vw;
+    height: 3vh;
+    background:#2691d9;
+    border-radius: 25px;
+    
+}
+
+.relleno{
+    border-bottom: 2px solid silver;
+}
+.relleno input{
+    transition: all 2s;
+}
+.relleno input:valid{
+    top:-5px;
+}
+.formulario_login{
+    border-bottom: 2px solid silver;
+
+}
+.olvidado{
+    color: #a6a6a6;
+    cursor: pointer; 
+}
+.olvidado:hover{
+    text-decoration: underline;
+}
 
 @media screen and (max-width: 844px) {
     #imagenPrincipal{
