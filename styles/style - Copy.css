@@ -1,0 +1,662 @@
+/*---------------- IMAGEN PRINCIPAL ----------------*/
+#imagenPrincipal{
+    width: 99.1vw;
+    height: 99.1vh;
+}
+/*  ---------------- BODY ---------------- */
+body{
+    font-family: 'PT Sans', sans-serif;
+    background-color:#79a4c4;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color:black
+}
+
+/*---------------- MENU ----------------*/
+.imagenMenu img{
+    width: 10vw;
+    height: 6vh;
+}
+/*---------------- INDEX ----------------*/
+.resolucionEmpresa h1{
+    text-align: center;
+    border: 3px;
+    padding: 1px;
+}
+
+.indexProblemas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.queSucede h2{
+    text-align: center;
+    border: 3px;
+    padding: 1px;
+    width: 100vw;
+    height: 10vh;
+}
+.textoIndex1{
+    display: flex;
+}
+.textoIndex1 p {
+    padding: 3px;
+}
+
+.textoIndex2{
+    display: flex;
+}
+.textoIndex2 p {
+    padding: 3px;
+}
+.imagesIndex{
+    width: 20vw;
+    height: 30vh;
+    padding: 3px;
+}
+.elegirnos{
+    display: flex;
+    width: 100vw;
+    height: 30vh;
+    flex-direction: row;
+    justify-content: center;
+}
+.elegirnos h6{
+    font-weight:bold;
+}
+.tituloRazones h3{
+    color:#0B5F9C;
+    opacity: 0.3;
+}
+.tituloRazones h2{
+    font-weight: bold;
+}
+.razones{
+    background-color:#AEDFFF;
+    width:100vw;
+    height:26vh;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    text-align: center;
+}
+.elegirnos__razones{
+    display: flex;
+    width: 20vw;
+    height: 10vh;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.experiencia{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: center;
+    align-content: center;
+    margin: 2% 0 2% 0 ;
+}
+.experiencia img{
+    border-radius: 50%;
+    width: 10vw;
+    height: 19vh;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+}
+.cantidad h4{
+    font-weight: bold;
+    color: #0B5F9C;
+}
+.cantidad p{
+    font-weight: bold;
+}
+.experiencia__info{
+    width: 20vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+
+
+/*---------------- CONOCENOS ----------------*/
+
+.historia{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.personal{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cartas{
+    display: flex;
+    width: 100vw;
+    height: 40vh;
+    justify-content: space-around;
+    align-items: center;
+}
+.personal__card{
+    background-color: antiquewhite;
+    display: flex;
+    width: 15vw;
+    height: 40vh;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 25px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.4);
+}
+.card__contenido h5{
+   text-align: center;
+   align-items: center;
+}
+
+.personal__card img{
+    width: 5vw;
+    height: 15vh;
+    border-radius: 50%;
+   
+}
+.card__contenido{
+    display: flex;
+    width: 30vw;
+    height: 20vh;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    
+}
+.card__descripcion{
+   text-align:  center;
+}
+.card__descripcion{
+    border-top:2px solid #a6a6a6;
+    border-bottom: 2px solid #a6a6a6;
+    width: 13vw;
+}
+
+
+/*----------------- SERVICIOS ---------------------*/
+.imagenesServicio{
+    width: 20vw;
+    height: 30vh;
+}
+
+.tituloServicios h1{
+    text-align: center;
+}
+.servicioUno{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 25vw;
+    height: 60vh;
+    grid-area: servicioUno;
+    background-color: #45667e88;
+    box-sizing: content-box;
+    border-radius: 20px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.4);
+    overflow: hidden;
+    transition: all 0.25s;
+}
+.servicioUno:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2s);
+}
+.servicioUno img{
+    width: 25vw;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
+}
+.servicioDos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 25vw;
+    height: 60vh;
+    grid-area: servicioDos;
+    background-color: #45667e88;
+    box-sizing: content-box;
+    border-radius: 20px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.4);
+    overflow: hidden;
+    transition: all 0.25s;
+}
+.servicioDos img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    width: 25vw;
+}
+.servicioDos:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2s);
+}
+.servicioTres{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 25vw;
+    height: 60vh;
+    grid-area: servicioTres;
+    background-color: #45667e88;
+    box-sizing: content-box;
+    border-radius: 20px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.4);
+    overflow: hidden;
+    transition: all 0.25s;
+}
+.servicioTres img{
+    width: 25vw;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.servicioTres:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2s);
+}
+.diferentesServicios{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "servicioUno servicioDos servicioTres";
+}
+.servicioMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.diferentesServicios{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/*------------------ CLIENTES ---------------------*/
+.imagenesClientes{
+    width: 20%;
+    height: 20%;
+}
+
+/*---------------------FOOTER----------------------*/
+.contacto{
+    width: 100vw;
+    height: 49.5vh;
+}
+footer h3{
+    text-align: center;
+    justify-content: center;
+    margin: 3px 0px 0px 0px;
+    padding: 3px;
+    background-color: #0B5F9C;
+}
+/*---- Contacto ----*/
+main h1{
+    text-align: center;
+}
+.contacto{
+    width: 100vw;
+    height: 3vh;
+    background-color: #0E77C2;
+}
+.contacto ul li{
+    display: inline;
+    list-style: none;
+    border: 1px;
+    padding: 3px;
+}
+.contacto ul{
+    display: flex;
+    justify-content: space-around;
+}
+main h3{
+    text-align: center;
+    justify-content: center;
+    margin: 3px 0px 0px 0px;
+    padding: 3px;
+}
+/*---- Pie Pagina----*/
+.piePagina{
+    display: flex;
+    width: 100vw;
+    height: 50vh;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    width: 25vw;
+    justify-content:space-around;
+    align-items: center;
+    background-color:rgb(88, 125, 211) ;
+
+}
+
+
+.nombreYapellido{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+.formu_NyA input{
+    height: 3vh;
+    width: 10vw;
+    border-radius: 8px;
+}
+.asunto input{
+    height: 3vh;
+    width: 20vw;
+    border-radius: 8px;
+}
+.mensaje textarea{
+    height: 15vh;
+    width: 20vw;
+    border-radius: 8px;
+
+}
+.enviar{
+    display: flex;
+    justify-content: center;
+
+}
+.socials li{
+    width: 5vw;
+}
+
+footer{
+    background-color:#0B5F9C;
+    text-align: center;
+    height: auto;
+    width: 100%;
+}
+.socials{
+    width: 100vw;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin: 1% 0 1% 0;
+}
+.socials a i{
+    transition: color .4s ease ;
+}
+.socials a:hover{
+    color: rgb(255, 255, 255);
+}
+/*------------- LOGIN ------------*/
+.caja{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.centro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    width: 20vw;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.4);
+    overflow: hidden;
+
+}
+.centro form{
+    width: 20vw;
+    height: 18vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.centro .login{
+    width: 20vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid silver;
+    text-align: center;
+}
+.centro input{
+    border: none;
+    font-size: 16px;
+    background: none;
+    outline: none;
+}
+.subir_login{
+    display: flex;
+    justify-content: center;
+    width: 10vw;
+    height: 3vh;
+    background:#2691d9;
+    border-radius: 25px;
+    
+}
+
+.relleno{
+    border-bottom: 2px solid silver;
+}
+.relleno input{
+    transition: all 2s;
+}
+.relleno input:valid{
+    top:-5px;
+}
+.formulario_login{
+    border-bottom: 2px solid silver;
+
+}
+.olvidado{
+    color: #a6a6a6;
+    cursor: pointer; 
+}
+.olvidado:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 844px) {
+    #imagenPrincipal{
+        width: 100vw;
+        height: 100vh;
+    }
+    /*-------- MENU RESPONSIVE-------------*/
+    
+    .logo img{
+        width: 25vw;
+        height: 10vh;
+    }
+    .items{
+        display: flex;
+        flex-direction: column;
+        width: 70vw;
+        align-items: center;
+    }
+    .menu{
+        width: 100vw;
+        height: 18vh;
+    }
+    .menu ul li{
+        width: 20vw;
+        border-radius: 3px;
+        margin-bottom: 3px;
+    
+
+    }
+
+   
+    /*-------- INDEX RESPONSIVE ------------*/
+    .indexProblemas img{
+        width: 100vw;
+        height: 100vh;
+    }
+    .indexProblemas img{
+        width: 100vw;
+        height: 50vh;
+    }
+    .queSucede h2{
+        height: 10vh;
+        width: 100vw;
+    }
+    .queSucede{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas:
+            "uno"
+            "dos";
+    }
+    .textoIndex1{
+        grid-area: "uno";
+        width: 100vw;
+        height: 50vh;
+    }
+    .textoIndex2{
+        grid-area: "dos";
+        width: 100vw;
+        height: 40vh;
+    }
+    .imagesIndex{
+        height: 20vh;
+        width: 30vw;
+    }
+    /*--------- CONOCENOS RESPONSIVE ---------*/
+    .principal{
+        display: flex;
+        justify-content: center;
+    }
+    .historia{
+        width: 100vw;
+        height: 163vh;
+    }  
+    .ITBA img{
+        width: 100vw;
+        height: 40vh;
+    }  
+
+    /*--------- SERVICIOS RESPONSIVE --------*/
+    .diferentesServicios{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "servicioUno"
+        "servicioDos"
+        "servicioTres";
+        row-gap: 15px;
+    }
+    .servicioUno{
+        display: flex;
+        align-items: center;
+        grid-area: servicioUno;
+        width: 100vw;
+        height: 80vh;
+        box-sizing: content-box;
+        border-radius: 20px;
+
+    }
+    .servicioDos{
+        display: flex;
+        align-items: center;
+        grid-area: servicioDos;
+        width: 100vw;
+        height: 80vh;
+        box-sizing: content-box;
+        border-radius: 20px;
+
+    }
+    .servicioTres{
+        display: flex;
+        align-items: center;
+        grid-area: servicioTres;
+        width: 100vw;
+        height: 80vh;
+        box-sizing: content-box;
+        border-radius: 20px;
+    }
+    .diferentesServicios img{
+        width: 70vw;
+        height: 50vh;
+    
+    }
+    /*--------- CONTACTO RESPONSIVE--------*/
+    .footer h3{
+        width: 100vw;
+        height: 10vh;
+    }
+    .contacto{
+        width: 100vw;
+    }
+    .contacto ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contacto ul li{
+        display: inline;
+        list-style: none;
+    }
+    #copyright{
+        width: 100vw;
+        height: 5vh;
+
+    }
+    .piePagina{
+        width: 100vw;
+        height: 40vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: 
+            "google"
+            "formulario";
+    }
+    .google{
+    display: flex;
+    grid-area: google;
+    width: 100vw;
+    height: 20vh;
+    align-items:flex-start;
+    }
+    .formulario{
+        grid-area: formulario;
+        display: none;
+    }
+
+
+    
+}

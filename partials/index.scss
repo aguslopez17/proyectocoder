@@ -1,0 +1,142 @@
+.absoluta{
+    height: 12vh;
+    position: absolute;
+}
+.inicio{
+    width: 100vw;
+    height: 100vh;
+    &__resolucionEmpresa h1{
+        text-align: center;
+        border: 3px;
+        padding: 1px;
+        &__indexProblemas{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+    
+        }
+    }
+    &__queSucede{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+
+        h2{
+            text-align: center;
+            border: 3px;
+            padding: 1px;
+            width: 100vw;
+            height: 10vh;
+            font-size: bold;
+        }
+        &__textoIndex{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-content: center;
+        
+            img{
+                width: 30vw;
+                height: 35vh;
+            }
+
+        }
+
+
+    }
+        &__imagesIndex{
+            width: 20vw;
+            height: 30vh;
+            padding: 3px;
+    
+        }
+    &__resolucionEmpresa{
+        h1{
+            text-align: center;
+            font-weight: bold;
+        }
+        &__indexProblemas{
+            display: flex;
+            width: 100vw;
+            height: 30vh;
+            img{
+                width: 50vw;
+                height: 30vh;
+                align-content: center;
+                justify-content: center;
+
+            }
+
+        }
+    }   
+    
+    }
+.razones{
+    background-color:#AEDFFF;
+    width:100vw;
+    height:26vh;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    text-align: center;
+    &__tituloRazones{
+        h3{
+            color:#0B5F9C;
+            opacity: 0.3;
+        }
+        h2{
+            font-weight: bold;
+        }
+    }
+    &__elegirnos{
+        display: flex;
+        flex-direction: row;
+        width: 100vw;
+        height: 26vh;
+        justify-content: center;
+        &__razon{
+            display: flex;
+            width: 20vw;
+            height: 10vh;
+            justify-content: space-around;
+            flex-direction: column;
+            h6{
+                font-weight: bold;
+            }
+        }
+        
+    }
+}
+.experiencia{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: center;
+    align-content: center;
+    margin: 2% 0 2% 0 ;
+    &__info{
+        width: 20vw;
+        display: flex;
+        justify-content: space-around;
+        img{
+            border-radius: 50%;
+            width: 10vw;
+            height: 19vh;
+            box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+        }
+        &__cantidad{
+            h4{
+                font-weight: bold;
+                color: #0B5F9C;
+            }
+            p{
+                font-weight: bold;
+            }
+
+        }
+
+    }
+
+}

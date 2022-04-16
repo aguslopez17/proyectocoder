@@ -1,0 +1,64 @@
+.caja{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    &__centro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 30vh;
+        width: 20vw;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 2px rgba(0,0,0,0.4);
+        overflow: hidden;
+        input{
+            border: none;
+            font-size: 16px;
+            background: none;
+            outline: none;
+        }
+        &__login{
+            width: 20vw;
+            height: 5vh;
+            display: flex;
+            justify-content: center;
+            border-bottom: 2px solid silver;
+            text-align: center;
+            h1{
+                font-weight: bold;
+            }
+        }
+        &__formulario{
+            width: 20vw;
+            height: 18vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            &__relleno{
+                border-bottom: 2px solid silver;
+                input{
+                    transition: all 2s;
+                }
+                input:valid{
+                    top:-5px;
+                }
+            }
+            &__subir_login{
+                display: flex;
+                justify-content: center;
+                width: 10vw;
+                height: 3vh;
+                background:#2691d9;
+                border-radius: 25px;
+                box-shadow: 0 1px 1px 0;
+            }
+
+        }
+    }
+}
