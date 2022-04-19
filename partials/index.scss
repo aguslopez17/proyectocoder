@@ -5,15 +5,20 @@
 .inicio{
     width: 100vw;
     height: 100vh;
-    &__resolucionEmpresa h1{
+    &__resolucionEmpresa {
+        h1{
         text-align: center;
         border: 3px;
         padding: 1px;
+        }
         &__indexProblemas{
             display: flex;
             flex-direction: row;
-            flex-wrap: wrap;
             justify-content: center;
+            align-content: center;
+            img{
+                align-items: center;
+            }
     
         }
     }

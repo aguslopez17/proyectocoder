@@ -1,0 +1,51 @@
+.contacto{
+    h1{
+        font-weight: bold;
+        text-align: center;
+    }
+    &__contenido{
+        height: 100vh;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        &__info{
+            width: 55vw;
+            height: 50vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #45667e88;
+            border-radius: 20px;
+            box-shadow: 0 2px 2px rgba(0,0,0,0.4);
+
+            img{
+                height: 30vh;
+                width: 20vw;
+            }
+            &__mail{
+                display: flex;
+                flex-direction: column;
+                height: 50vh;
+                justify-content: center;
+                ul{
+                    display: flex;
+                    flex-direction: column;
+                    width: 25vw;
+                    height: 5vh;
+                    justify-content: center;
+                    align-items: center;
+                    li{
+                        list-style: none;
+                        font-weight: bolder;
+                    }
+                }
+            }
+            
+        }
+    }
+
+}
+

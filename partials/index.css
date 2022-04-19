@@ -14,7 +14,7 @@
   padding: 1px;
 }
 
-.inicio__resolucionEmpresa h1__indexProblemas {
+.inicio__resolucionEmpresa__indexProblemas {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,11 +22,17 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.inicio__resolucionEmpresa__indexProblemas img {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .inicio__queSucede {

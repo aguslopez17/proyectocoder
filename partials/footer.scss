@@ -1,0 +1,29 @@
+.footer-contenido{
+    background-color:#0B5F9C;
+    text-align: center;
+    height: auto;
+    width: 100vw;
+    height: 15vh;
+    &__socials{
+        width: 100vw;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content:center;
+        margin: 1% 0 1% 0;
+        li{
+            width: 5vw;
+            a{
+                i{
+                    transition: color .4s ease ;
+                }
+            }
+            a:hover{
+                color: rgb(255, 255, 255);
+            }
+
+        }
+
+    }
+
+}
