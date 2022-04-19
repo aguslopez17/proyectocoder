@@ -1,0 +1,30 @@
+@media screen and (max-width:400px){
+    .inicio{
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        &__resolucionEmpresa{
+            h1{
+                text-align: center;
+                font-weight: bold;
+            }
+            &__indexProblemas{
+                img{
+                    width: 40vw;
+                    height: 30vh;
+                }
+            }
+        }
+        &__queSucede{
+            h2{
+                text-align: center;
+            }
+        }
+
+    }
+    
+    
+}

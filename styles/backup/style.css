@@ -33,33 +33,9 @@ body a {
           flex-direction: column;
 }
 
-.historia__conocenos {
-  width: 85vw;
-  height: 40vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.historia__conocenos img {
-  width: 25vw;
-  height: 40vh;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
-}
-
 .historia__personal {
   width: 100vw;
-  height: 50vh;
+  height: 30vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -67,8 +43,9 @@ body a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -79,8 +56,9 @@ body a {
   display: -ms-flexbox;
   display: flex;
   width: 100vw;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -642,8 +620,9 @@ body a {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 50vh;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .contacto__contenido__info__mail ul {
@@ -654,7 +633,7 @@ body a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 30vw;
+  width: 25vw;
   height: 5vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -667,53 +646,6 @@ body a {
 .contacto__contenido__info__mail ul li {
   list-style: none;
   font-weight: bolder;
-}
-
-.contacto__contenido__info__mail__google iframe {
-  width: 30vw;
-  height: 30vh;
-}
-
-@media screen and (max-width: 400px) {
-  .inicio {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .inicio__resolucionEmpresa h1 {
-    text-align: center;
-    font-weight: bold;
-  }
-  .inicio__resolucionEmpresa__indexProblemas img {
-    width: 30vw;
-    height: 20vh;
-  }
-  .inicio__queSucede {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 100vw;
-    height: 50vh;
-  }
-  .inicio__queSucede h2 {
-    text-align: center;
-  }
 }
 
 * {

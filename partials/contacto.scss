@@ -29,17 +29,23 @@
                 display: flex;
                 flex-direction: column;
                 height: 50vh;
-                justify-content: center;
+                justify-content: space-around;
                 ul{
                     display: flex;
                     flex-direction: column;
-                    width: 25vw;
+                    width: 30vw;
                     height: 5vh;
                     justify-content: center;
                     align-items: center;
                     li{
                         list-style: none;
                         font-weight: bolder;
+                    }
+                }
+                &__google{
+                    iframe{
+                        width: 30vw;
+                        height: 30vh;
                     }
                 }
             }

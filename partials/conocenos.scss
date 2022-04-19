@@ -5,18 +5,32 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    &__conocenos{
+        width: 85vw;
+        height: 40vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        img{
+            width: 25vw;
+            height: 40vh;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+    }
 
     &__personal{
         width: 100vw;
-        height: 30vh;
+        height: 50vh;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         &__cartas{
             display: flex;
             width: 100vw;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
             height: 30vh;
             &__card{

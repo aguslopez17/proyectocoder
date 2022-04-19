@@ -56,9 +56,8 @@
       -ms-flex-direction: column;
           flex-direction: column;
   height: 50vh;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .contacto__contenido__info__mail ul {
@@ -69,7 +68,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 25vw;
+  width: 30vw;
   height: 5vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -82,5 +81,10 @@
 .contacto__contenido__info__mail ul li {
   list-style: none;
   font-weight: bolder;
+}
+
+.contacto__contenido__info__mail__google iframe {
+  width: 30vw;
+  height: 30vh;
 }
 /*# sourceMappingURL=contacto.css.map */
